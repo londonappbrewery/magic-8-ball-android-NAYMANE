@@ -1,13 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    android:id="@+id/activity_main"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="16dp"
+    android:background="#A5D6FF"
+
+
+
+
     android:paddingBottom="16dp"
     tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image_ball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        app:srcCompat="@drawable/ball3" />
+
+    <Button
+        android:id="@+id/button_ask"
+        android:layout_width="350dp"
+        android:layout_height="61dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="550dp"
+        android:background="#0665B8"
+        android:text="@string/Button"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:background="#0665B8"
+        android:textColor="#ffffff"
+        android:text="@string/title" />
+
+
 </RelativeLayout>
